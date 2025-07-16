@@ -30,16 +30,21 @@ flutter pub get
 
 ## Usage
 
+Import the package and start using the utility extensions:
+
+```dart
 
 import 'package:easy_string_utils/easy_string_utils.dart';
 
 void main() {
   final text = 'hello world';
 
-  print(text.toTitleCase()); // Hello World
-  print(text.toCamelCase()); // helloWorld
+  print(text.toTitleCase());               // Hello World
+  print(text.toCamelCase());               // helloWorld
   print('test@example.com'.isValidEmail()); // true
   print('1234567890'.mask(start: 3, end: 7)); // 123****890
-  print('John Doe'.initials()); // JD
-  print('Racecar'.isPalindrome()); // true
+  print('John Doe'.initials());            // JD
+  print('Racecar'.isPalindrome());         // true
 }
+
+```
