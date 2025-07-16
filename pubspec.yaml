@@ -1,0 +1,40 @@
+name: easy_string_utils
+description: A simple Dart extension that provides commonly used and easy-to-use string utility methods for Flutter and Dart projects.
+version: 1.0.0
+homepage: https://github.com/Madiha-debug/easy_string_utils
+
+environment:
+  sdk: ^3.0.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# Optional metadata for pub.dev
+topics:
+  - string
+  - utility
+  - extensions
+  - flutter
+  - dart
+
+platforms:
+  android:
+  ios:
+  web:
+  linux:
+  macos:
+  windows:
+
+repository: https://github.com/Madiha-debug/easy_string_utils
+issue_tracker: https://github.com/Madiha-debug/easy_string_utils/issues
+
+# Flutter-specific configuration
+flutter:
+ # No assets or fonts configured yet
