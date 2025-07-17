@@ -2,6 +2,9 @@
 
 A simple and practical Dart extension package that adds a collection of commonly used string utility methods to make string manipulation easier and cleaner in Flutter and Dart projects.
 
+[![Pub Version](https://img.shields.io/pub/v/easy_string_utils.svg)](https://pub.dev/packages/easy_string_utils)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ## Features
 
 - Convert strings to Title Case, Camel Case, and capitalized forms
