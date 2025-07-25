@@ -1,6 +1,6 @@
 name: easy_string_utils
 description: A simple Dart extension that provides commonly used and easy-to-use string utility methods for Flutter and Dart projects.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Madiha-debug/easy_string_utils
 
 environment:
