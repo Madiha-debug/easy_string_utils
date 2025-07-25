@@ -66,7 +66,8 @@ void main() {
       expect('Racecar'.isPalindrome(), true);
       expect('No lemon no melon'.isPalindrome(), true);
       expect('hello'.isPalindrome(), false);
-      expect(''.isPalindrome(), true); // empty string can be considered palindrome
+      expect(
+          ''.isPalindrome(), true); // empty string can be considered palindrome
     });
 
     test('truncateWithEllipsis', () {
@@ -110,12 +111,13 @@ void main() {
       expect(''.charCount(), 0);
     });
 
-    test('charCountWithoutSpaces should return number of non-whitespace characters', () {
+    test(
+        'charCountWithoutSpaces should return number of non-whitespace characters',
+        () {
       expect('Flutter Dev'.charCountWithoutSpaces(), 10);
       expect('  Dart  Lang  '.charCountWithoutSpaces(), 8);
       expect(''.charCountWithoutSpaces(), 0);
     });
-
 
     test('Mixed and empty string cases', () {
       expect(''.upperCaseCount(), 0);
@@ -137,6 +139,5 @@ void main() {
     test('should toggle all character cases', () {
       expect('Hello'.toggleCase(), 'hELLO');
     });
-
   });
 }

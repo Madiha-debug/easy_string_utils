@@ -1,5 +1,4 @@
 extension StringUtils on String {
-
   /// Converts each word in the string to Title Case
   String toTitleCase() {
     if (isEmpty) return this;
@@ -133,10 +132,10 @@ extension StringUtils on String {
 
   /// Toggles the case of each character in the string.
   String toggleCase() => split('').map((char) {
-    if (char == char.toUpperCase()) {
-      return char.toLowerCase();
-    } else {
-      return char.toUpperCase();
-    }
-  }).join();
+        if (char == char.toUpperCase()) {
+          return char.toLowerCase();
+        } else {
+          return char.toUpperCase();
+        }
+      }).join();
 }
