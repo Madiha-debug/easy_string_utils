@@ -51,9 +51,10 @@ void main() {
   final spaced = '   Hello     Flutter   ';
   final numeric = '42';
   final longText = 'This is a very long sentence that needs truncation.';
-  final slugText = 'My Blog Post!';
-  final digitsText = 'Call me at 0321-1234567';
+  final sample = 'My Blog Post!';
   final wordText = 'This is a sample sentence.';
+  final fullText = 'Flutter is fun!';
+  final spacedText = '  Hello  World  ';
 
   print(text.toTitleCase());                    // Hello World
   print(text.toCamelCase());                    // helloWorld
@@ -69,7 +70,14 @@ void main() {
   print(spaced.removeWhiteSpace());             // HelloFlutter
   print(wordText.wordCount());                  // 5
   print(longText.truncateWithEllipsis(20));     // This is a very long...
-  print(slugText.toSlug());                     // my-blog-post
+  print(sample.toSlug());                     // my-blog-post
+  print(fullText.charCount()); // Output: 15
+  print(spacedText.charCountWithoutSpaces()); // 10
+  print('Uppercase count: ${sample.upperCaseCount()}'); // Output: 3
+  print('Lowercase count: ${sample.lowerCaseCount()}'); // Output: 8
+  print(' '.isNullOrEmpty()); //true
+  print('User123'.removeDigits()); //User
+  print('Hello'.toggleCase()); //hELLO
 }
 
 ```

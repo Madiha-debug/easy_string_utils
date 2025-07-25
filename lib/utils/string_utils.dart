@@ -104,4 +104,39 @@ extension StringUtils on String {
         .map((word) => word[0].toUpperCase())
         .join();
   }
+
+  /// Returns the total number of characters in the string.
+  int charCount() {
+    return length;
+  }
+
+  /// Returns the number of non-whitespace characters in the string.
+  int charCountWithoutSpaces() {
+    return replaceAll(RegExp(r'\s+'), '').length;
+  }
+
+  /// Returns the number of uppercase characters in the string.
+  int upperCaseCount() {
+    return replaceAll(RegExp(r'[^A-Z]'), '').length;
+  }
+
+  /// Returns the number of lowercase characters in the string.
+  int lowerCaseCount() {
+    return replaceAll(RegExp(r'[^a-z]'), '').length;
+  }
+
+  /// Check if a string is either null or empty.
+  bool isNullOrEmpty() => trim().isEmpty;
+
+  /// Removes all digits from the string.
+  String removeDigits() => replaceAll(RegExp(r'\d'), '');
+
+  /// Toggles the case of each character in the string.
+  String toggleCase() => split('').map((char) {
+    if (char == char.toUpperCase()) {
+      return char.toLowerCase();
+    } else {
+      return char.toUpperCase();
+    }
+  }).join();
 }

@@ -103,5 +103,40 @@ void main() {
       expect('   '.initials(), '');
       expect('multiple   spaces here'.initials(), 'MSH');
     });
+
+    test('charCount should return total number of characters', () {
+      expect('Flutter'.charCount(), 7);
+      expect('Hello World!'.charCount(), 12); // includes space and punctuation
+      expect(''.charCount(), 0);
+    });
+
+    test('charCountWithoutSpaces should return number of non-whitespace characters', () {
+      expect('Flutter Dev'.charCountWithoutSpaces(), 10);
+      expect('  Dart  Lang  '.charCountWithoutSpaces(), 8);
+      expect(''.charCountWithoutSpaces(), 0);
+    });
+
+
+    test('Mixed and empty string cases', () {
+      expect(''.upperCaseCount(), 0);
+      expect(''.lowerCaseCount(), 0);
+      expect('1234!@#'.upperCaseCount(), 0);
+      expect('1234!@#'.lowerCaseCount(), 0);
+      expect('ALLUPPER'.upperCaseCount(), 8);
+      expect('alllower'.lowerCaseCount(), 8);
+    });
+
+    test('should return true for empty string', () {
+      expect(' '.isNullOrEmpty(), isTrue);
+    });
+
+    test('should remove digits from string', () {
+      expect('User123'.removeDigits(), 'User');
+    });
+
+    test('should toggle all character cases', () {
+      expect('Hello'.toggleCase(), 'hELLO');
+    });
+
   });
 }
